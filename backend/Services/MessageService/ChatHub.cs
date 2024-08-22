@@ -6,7 +6,7 @@ namespace MessageService
     {
         public async Task Send(string message)
         {
-            await this.Clients.All.SendAsync("Send", message);
+            await this.Clients.All.SendAsync("", message);
         }
     }
 }

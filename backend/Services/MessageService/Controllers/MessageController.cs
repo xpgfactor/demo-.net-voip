@@ -8,7 +8,6 @@ namespace MessageService.Controllers
     [Route("[controller]")]
     public class MessageController : ControllerBase
     {
-
         private readonly ILogger<MessageController> _logger;
         private readonly IKafkaProducer<Null, string> _producer;
 
